@@ -59,6 +59,9 @@ import java.util.List;
 
 /**
  * Created by alex on 20/02/16.
+ * This is the GoogleMap fragment implementing all things map oriented
+ * Draw new paddocks, locate via GPS, zoom to paddock, view covers by color,
+ * start Farmwalk service
  */
 public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
         GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener, GoogleMap.OnMarkerClickListener{
@@ -417,6 +420,10 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
         String polyString = gson.toJson(arrayPoints);
         mapBundle(finalArea, polyString);
     }
+    
+    /**
+     * Bundle the marked out paddock and send to MapDialog. 
+     */
 
     public void mapBundle(double area, String points){
         Bundle arguments = new Bundle();
