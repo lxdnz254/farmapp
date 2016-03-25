@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <EditText
+            android:id="@+id/etxt_stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/stock_name"
+            android:nextFocusDown="@+id/etxt_quantity"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etxt_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_stock_name"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/etxt_dailyfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_quantity"
+            android:hint="Daily kgs per animal"
+            android:inputType="numberDecimal"
+            android:singleLine="true"/>
+        <CheckBox
+            android:id="@+id/echeckbox_supp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_dailyfeed"
+            android:checked="false"/>
+        <TextView
+            android:id="@+id/etxt_supplement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/echeckbox_supp"
+            android:layout_below="@+id/etxt_dailyfeed"
+            android:text="@string/supplement"
+            android:padding="6dp"/>
+        <EditText
+            android:id="@+id/etxt_suppkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/echeckbox_supp"
+            android:hint="Supplement Kgs per animal daily"
+            android:inputType="numberDecimal"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/etxt_grasskg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_suppkg"
+            android:text="@string/grasskg"/>
+
+        <TextView
+            android:id="@+id/in_paddock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_grasskg"
+            android:text="In Paddock"
+            android:padding="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_paddock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_grasskg"
+            android:layout_toRightOf="@+id/in_paddock">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/etxt_stock_areausing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_paddock"
+            android:layout_alignStart="@+id/in_paddock"
+            android:layout_alignLeft="@+id/in_paddock"
+            android:hint="Area Using"
+            android:inputType="numberDecimal"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_stock_areausing"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/add_stock" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>

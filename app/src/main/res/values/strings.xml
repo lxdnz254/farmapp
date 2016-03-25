@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Stock Feeder</string>
+
+    <string name="title_section0">Farm Details</string>
+    <string name="title_section1">List Paddocks</string>
+    <string name="title_section2">Add a Paddock </string>
+    <string name="title_section3">List your Stock Mobs</string>
+    <string name="title_section4">Add a Stock Mob</string>
+    <string name="title_section5">One Feed Scenario</string>
+    <string name="title_section6">Two Feed Scenario</string>
+    <string name="title_section7">View and Edit Farm Map</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="action_farm">Farm Details</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_move">Move Stock</string>
+    <string name="action_cover">Update Cover</string>
+    <string name="action_add">Add a paddock</string>
+    <string name="action_add_stock">Add stock</string>
+    <string name="action_xls">Create and Send XLS</string>
+
+
+    <string name="paddock_activity">Stock Feeder-Paddocks</string>
+    <string name="stock_activity">Stock Feeder-Stock</string>
+    <string name="stock_name">Stock Name</string>
+    <string name="move_hello">Lets move the stock</string>
+    <string name="add_paddock">Add a paddock</string>
+    <string name="draw_paddock">View and Edit Farm Map</string>
+    <string name="find_paddock">Look up a paddock</string>
+    <string name="delete_paddock">Delete a paddock</string>
+    <string name="paddock_name">Paddock name</string>
+    <string name="area">Area</string>
+    <string name="reset">Reset</string>
+    <string name="update_pad">Update Paddock</string>
+    <string name="update_settings">Update Settings</string>
+    <string name="update_cover">Update Cover</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="quantity">Number of animals</string>
+    <string name="add_stock">Add Stock</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="supplement">Using Supplement</string>
+    <string name="currentcoverdate">Date current cover was read</string>
+    <string name="currentcover">The current cover</string>
+    <string name="welcome">Welcome to Stock Feeder</string>
+    <string name="farmsize">The current farm size is :</string>
+    <string name="farmstock">The number of animals on the farm is :</string>
+    <string name="farmround">The farm is on a </string>
+    <string name="farmstockarea">The animals are using :</string>
+    <string name="farmcover">The farm has an average cover of :</string>
+    <string name="farmgrowth">The farm has an average growth of :</string>
+    <string name="farmdemand">The stock demand is :</string>
+    <string name="feedcover">At the last recorded cover of :</string>
+    <string name="feedstock">The stock require :</string>
+    <string name="grasskg">Kgs of Grass needed :</string>
+    <string name="feed_current_area">The stock are currently assigned :</string>
+    <string name="feed_grass_only">The stock are currently not being fed supplement</string>
+    <string name="feedarea_no_sup">With no supplement the stock would need an area of :</string>
+    <string name="feedarea_current_sup">With the current amount of supplement assigned the stock would need an area of :</string>
+    <string name="feedarea_extra_sup">Using the current assigned area the stock would need supplement of :</string>
+    <string name="coveris">The current cover is:</string>
+    <string name="coverdateis">The current cover date is:</string>
+    <string name="createxls">Create XLS</string>
+    <string name="sendxls">Send XLS</string>
+    <string name="title_activity_maps">FarmMap</string>
+    <string name="stopfarmwalk">Stop Farmwalk</string>
+    <string name="startfarmwalk">Start Farmwalk</string>
+</resources>

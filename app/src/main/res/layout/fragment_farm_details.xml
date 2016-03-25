@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome"
+        android:id="@+id/farm_det_welcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/farm_det_farmsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/farmsize"
+        android:layout_below="@+id/farm_det_welcome"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/farm_det_farmstock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_det_farmsize"
+        android:padding="4dp"
+        android:text="@string/farmstock"/>
+
+    <TextView
+        android:id="@+id/farm_det_farmcover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_det_farmstock"
+        android:text="@string/farmcover"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/farm_det_farmgrowth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_det_farmcover"
+        android:text="@string/farmgrowth"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/farm_det_farmstock_using"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_det_farmgrowth"
+        android:text="@string/farmstockarea"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/farm_det_farmstock_demand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_det_farmstock_using"
+        android:text="@string/farmdemand"
+        android:padding="4dp"
+        />
+
+    <TextView
+        android:id="@+id/farm_det_farmround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/farm_det_farmstock_demand"
+        android:text="@string/farmround"
+        android:padding="4dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/feed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Feed Scenario"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/choose_paddock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_title"
+        android:text="Choose Paddock"
+        android:padding="6dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_paddock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_title"
+        android:layout_toRightOf="@+id/choose_paddock"
+        android:paddingBottom="6dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/choose_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_paddock"
+        android:text="Choose Stock"
+        android:padding="6dp"
+        android:paddingBottom="12dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_paddock"
+        android:layout_toRightOf="@+id/choose_stock"
+        android:paddingBottom="6dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/feed_current_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_stock"
+        android:text="@string/feed_current_area"
+        android:paddingTop="12dp"
+        android:paddingLeft="6dp"/>
+
+    <TextView
+        android:id="@+id/feed_stock_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_current_area"
+        android:text="@string/feedstock"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/feed_current_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_stock_kg"
+        android:text="@string/feedcover"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/feed_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_current_cover"
+        android:text="@string/feedarea_no_sup"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/feed_supyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_area"
+        android:text="@string/feedarea_current_sup"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/feed_supplement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_supyn"
+        android:text="@string/feedarea_extra_sup"
+        android:padding="6dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Area with No Supplement"
+        android:id="@+id/areabutton"
+        android:layout_below="@+id/feed_supplement"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/currentbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Area with Current Supplement"
+        android:layout_below="@+id/areabutton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Supplement"
+        android:id="@+id/supplementbutton"
+        android:layout_below="@+id/currentbutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/adjuststockbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjust Stock Feed/Area"
+        android:layout_below="@+id/supplementbutton"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</ScrollView>

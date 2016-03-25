@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_add"/>
+
+    <item
+        android:showAsAction="ifRoom|withText"
+        android:id="@+id/action_add_stock"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="101"
+        android:title="@string/action_add_stock"/>
+    <item
+        android:id="@+id/action_cover"
+        android:title="@string/action_cover"
+        android:showAsAction="ifRoom|withText"
+        android:orderInCategory="102"/>
+
+    <item
+        android:id="@+id/action_example"
+        android:title="@string/action_farm"
+        app:showAsAction="withText|ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="105"
+        android:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/action_farmwalk"
+        android:title="@string/startfarmwalk"
+        android:orderInCategory="103"
+        android:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        android:id="@+id/action_xls"
+        android:title="@string/action_xls"
+        android:orderInCategory="104"
+        android:showAsAction="ifRoom|withText" />
+
+</menu>

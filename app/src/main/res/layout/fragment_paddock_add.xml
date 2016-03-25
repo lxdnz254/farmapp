@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaddockActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <EditText
+            android:id="@+id/etxt_paddock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/paddock_name"
+            android:nextFocusDown="@+id/etxt_area"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etxt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_paddock_name"
+            android:hint="@string/area"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etxt_currentcoverdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_area"
+            android:nextFocusDown="@+id/etxt_currentcover"
+            android:hint="@string/currentcoverdate"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/etxt_currentcover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_currentcoverdate"
+            android:hint="@string/currentcover"
+            android:inputType="number"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/txt_previouscoverdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_currentcover"
+            android:padding="6dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_previouscover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_previouscoverdate"
+            android:padding="6dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_previouscoverdate"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/add_paddock" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/action_xls"
+        android:id="@+id/farmwalk_title"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:typeface="normal"
+        android:textStyle="bold|italic"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createxls"
+        android:id="@+id/farmwalk_create_xls"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/farmwalk_email"
+        android:text="Email to :" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sendxls"
+        android:id="@+id/farmwalk_send"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

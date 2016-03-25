@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <EditText
+            android:id="@+id/map_txt_paddock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/paddock_name"
+            android:nextFocusDown="@+id/map_txt_area"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/map_txt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_txt_paddock_name"
+            android:hint="@string/area"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/map_txt_currentcoverdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_txt_area"
+            android:nextFocusDown="@+id/map_txt_currentcover"
+            android:hint="@string/currentcoverdate"
+            android:inputType="date"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/map_txt_currentcover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_txt_currentcoverdate"
+            android:hint="@string/currentcover"
+            android:inputType="number"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:id="@+id/layout_submit_new_map"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_txt_currentcover"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:text="@string/add_paddock" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="@string/cancel"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/layout_stock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_stock_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/txt_stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt_stock_id"
+            android:layout_toRightOf="@+id/txt_stock_id"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/txt_stock_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_stock_id"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/txt_stock_dailyfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt_stock_quantity"
+            android:layout_toRightOf="@+id/txt_stock_quantity"
+            android:layout_below="@+id/txt_stock_name"
+            android:padding="6dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_supp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_stock_quantity"
+            android:text="@string/supplement"
+            android:enabled="false"
+            android:padding="6dp"/>
+        <TextView
+            android:id="@+id/txt_stock_suppkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/checkbox_supp"
+            android:layout_toRightOf="@+id/checkbox_supp"
+            android:layout_below="@+id/txt_stock_dailyfeed"
+            android:padding="6dp"
+            />
+        <TextView
+            android:id="@+id/txt_stock_grasskg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox_supp"
+            android:padding="6dp"/>
+        <TextView
+            android:id="@+id/txt_stock_in_paddock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_stock_grasskg"
+            android:padding="6dp"/>
+        <TextView
+            android:id="@+id/txt_area_using"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_stock_in_paddock"
+            android:padding="6dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_stock"
+        />
+
+</RelativeLayout>

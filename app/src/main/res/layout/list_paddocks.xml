@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/layout_paddock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_paddock_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/txt_paddock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_paddock_id"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/txt_paddock_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_paddock_name"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/txt_current_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_paddock_name"
+            android:layout_toRightOf="@+id/txt_paddock_area"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/txt_growth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_paddock_area"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/txt_previous_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_current_cover"
+            android:layout_toRightOf="@+id/txt_growth"
+            android:padding="6dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_paddock"
+         />
+
+</RelativeLayout>
