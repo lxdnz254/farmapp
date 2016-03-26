@@ -210,9 +210,9 @@ public class NotificationDialog extends DialogFragment  {
             } while (cursor.moveToNext());
         }
         cursor.close();
-        Log.i(TAG, "pos is equal to:" + pos);
+        Log.i(TAG, "pos is equal to:" + (pos-1));
 
-        Paddock currentPaddock = getpaddocks.get(pos);
+        Paddock currentPaddock = getpaddocks.get(pos-1);
 
 
         setValue(currentPaddock);
@@ -237,8 +237,7 @@ public class NotificationDialog extends DialogFragment  {
         SharedPreferences sharedPref = getActivity().getSharedPreferences("FarmApp", Context.MODE_PRIVATE);
         pad = sharedPref.getString("userInPaddock", "");
 
-        return;
-    }
+        }
 
     private void dateSet(){
         Calendar newCalendar = Calendar.getInstance();
