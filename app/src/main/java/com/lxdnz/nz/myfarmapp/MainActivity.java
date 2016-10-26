@@ -233,11 +233,11 @@ public class MainActivity extends ActionBarActivity
         actionBar.setTitle(mTitle);
     }
 
-    protected void setFragmentTitle(int resourseId) {
-      //  Log.i(TAG, " ResourseID " + resourseId);
-        setTitle(resourseId);
+    protected void setFragmentTitle(int resourceId) {
+      //  Log.i(TAG, " ResourceID " + resourceId);
+        setTitle(resourceId);
 
-        // getActionBar().setTitle(resourseId);
+        // getActionBar().setTitle(resourceId);
 
     }
 

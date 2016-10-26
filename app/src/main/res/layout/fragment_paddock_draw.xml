@@ -26,7 +26,8 @@
         android:padding="10dp"
         android:layout_marginTop="20dp"
         android:paddingLeft="10dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/viewCoverButton"
@@ -37,7 +38,8 @@
         android:layout_marginTop="70dp"
         android:padding="10dp"
         android:text="Button 2"
-        android:onClick="viewCovers"/>
+        android:onClick="viewCovers"
+        android:visibility="gone"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -47,7 +49,8 @@
         android:padding="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="40dp"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        android:visibility="gone"/>
 </FrameLayout>
 
 

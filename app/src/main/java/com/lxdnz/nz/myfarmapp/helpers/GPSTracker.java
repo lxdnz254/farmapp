@@ -124,7 +124,7 @@ public class GPSTracker extends Service implements LocationListener {
                 }
                 // if GPS Enabled get lat/long using GPS Services
                 if (isGPSEnabled) {
-                    if (location == null) {
+                    if (location != null) { // needs to be not null for GPS location to be passed to app
                         locationManager.requestLocationUpdates(
                                 LocationManager.GPS_PROVIDER,
                                 MIN_TIME_BW_UPDATES,
@@ -322,7 +322,7 @@ public class GPSTracker extends Service implements LocationListener {
         SQLiteQueryBuilder queryBuilder = new SQLiteQueryBuilder();
         queryBuilder.setTables(FarmDbHandler.TABLE_PADDOCKS);
 
-        Cursor cursor = queryBuilder.query(mapDbAO.mapdatabase, new String[]{
+        Cursor cursor = queryBuilder.query(mapDbAO.mapDatabase, new String[]{
 
                 FarmDbHandler.COLUMN_MAPPED,
                 FarmDbHandler.COLUMN_POLYPOINTS,
@@ -394,7 +394,7 @@ public class GPSTracker extends Service implements LocationListener {
 
     private class MapDbAO {
 
-        protected SQLiteDatabase mapdatabase;
+        protected SQLiteDatabase mapDatabase;
         private FarmDbHandler dbHelper;
         private Context mContext;
 
@@ -408,7 +408,7 @@ public class GPSTracker extends Service implements LocationListener {
         public void open() throws SQLException {
             if(dbHelper == null)
                 dbHelper = FarmDbHandler.getHelper(mContext);
-            mapdatabase = dbHelper.getWritableDatabase();
+            mapDatabase = dbHelper.getWritableDatabase();
         }
     }
 

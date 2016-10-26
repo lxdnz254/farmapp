@@ -93,7 +93,7 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
     private GetPaddockTask task;
     Activity activity;
 
-    ArrayList<Paddock> getpaddocks;
+    ArrayList<Paddock> getPaddocks;
     private Paddock paddock;
     private Intent intent;
     private Context sharedContext;
@@ -165,7 +165,8 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
         if(polygonExist) {
             Button button = (Button) rootView.findViewById(R.id.enablePaddockButton);
             button.setText(enablePaddocks);
-            Log.i(TAG, "settng text button:" + enablePaddocks);
+            button.setVisibility(View.VISIBLE);
+            Log.i(TAG, "setting text button:" + enablePaddocks);
             button.setAlpha((float) 0.4);
 
             button.setOnClickListener(new View.OnClickListener() {
@@ -197,6 +198,7 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
 
             Button button2 = (Button) rootView.findViewById(R.id.viewCoverButton);
             button2.setText(viewCover);
+            button2.setVisibility(View.VISIBLE);
             button2.setAlpha((float) 0.4);
             button2.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -224,6 +226,7 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
                 farmwalkActive = "Stop Farmwalk";
             }
             button3.setText(farmwalkActive);
+            button3.setVisibility(View.VISIBLE);
             button3.setAlpha((float) 0.4);
             button3.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -620,7 +623,7 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
                     }
                     cursor.close();
 
-                    Paddock paddock = getpaddocks.get(pos-1);
+                    Paddock paddock = getPaddocks.get(pos-1);
                     Toast.makeText(getActivity(), "Clicked on Paddock:" + paddock.getPaddockName()+", Cover:"+
                             paddock.getCurrentCover()+", Area:"+paddock.getArea()+"ha", Toast.LENGTH_SHORT).show();
                     // Handle click ...pass the paddock to zoom to..
@@ -679,7 +682,7 @@ public class PaddockDrawFragment extends Fragment implements OnMapReadyCallback,
         protected void onPostExecute(Void v) {
             if (activityWeakRef.get() != null
                     && !activityWeakRef.get().isFinishing()) {
-                        getpaddocks = new ArrayList<Paddock>(paddocks);
+                        getPaddocks = new ArrayList<Paddock>(paddocks);
             }
         }
     }
