@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.google.maps.android:android-maps-utils
+    versions:
+    - 2.2.0
+    - 2.2.1
+    - 2.2.2
