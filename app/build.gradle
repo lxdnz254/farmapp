@@ -36,7 +36,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:support-v4:23.2.0'
     compile 'com.google.android.gms:play-services-maps:8.4.0'
-    compile 'com.google.maps.android:android-maps-utils:0.6.1'
+    compile 'com.google.maps.android:android-maps-utils:2.2.4'
     compile files('libs/jexcelapi/jxl.jar')
     compile 'com.google.code.gson:gson:2.8.6'
     compile 'com.android.support:multidex:1.0.0'
